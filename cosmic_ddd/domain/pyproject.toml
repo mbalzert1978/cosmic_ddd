@@ -2,8 +2,9 @@
 name = "domain"
 version = "0.1.0"
 description = "Domain layer of cosmic-ddd"
-authors = ["mbalzert@gmail.com"]
+authors = ["Markus Iorio <mbalzert@gmail.com>"]
 packages = [{ include = "domain" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+results = {git = "https://github.com/mbalzert1978/results.git"}

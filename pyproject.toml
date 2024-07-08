@@ -5,14 +5,21 @@ description = ""
 authors = ["Markus Iorio <mbalzert@gmail.com>"]
 readme = "README.md"
 packages = [
-    { include = "application" },
-    { include = "domain" },
-    { include = "infrastructure" },
-    { include = "presentation" },
+    { include = "cosmic_ddd", from = "." },
+    { include = "cosmic_ddd/application" },
+    { include = "cosmic_ddd/domain" },
+    { include = "cosmic_ddd/presentation" },
+    { include = "cosmic_ddd/infrastructure" },
 ]
+
 
 [tool.poetry.dependencies]
 python = "^3.11"
+application = { path = "cosmic_ddd/application" }
+domain = { path = "cosmic_ddd/domain" }
+presentation = { path = "cosmic_ddd/presentation" }
+infrastructure = { path = "cosmic_ddd/infrastructure" }
+
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.3.5"

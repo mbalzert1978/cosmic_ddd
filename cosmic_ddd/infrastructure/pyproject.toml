@@ -2,7 +2,7 @@
 name = "infrastructure"
 version = "0.1.0"
 description = "Infrastructure layer of cosmic-ddd"
-authors = ["mbalzert@gmail.com"]
+authors = ["Markus Iorio <mbalzert@gmail.com>"]
 packages = [{ include = "infrastructure" }]
 
 [tool.poetry.dependencies]
