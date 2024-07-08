@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "application"
+version = "0.1.0"
+description = "Application layer of cosmic-ddd"
+authors = ["mbalzert@gmail.com"]
+packages = [{ include = "application" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+domain = { path = "../domain" }
