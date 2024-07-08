@@ -2,7 +2,7 @@
 name = "application"
 version = "0.1.0"
 description = "Application layer of cosmic-ddd"
-authors = ["mbalzert@gmail.com"]
+authors = ["Markus Iorio <mbalzert@gmail.com>"]
 packages = [{ include = "application" }]
 
 [tool.poetry.dependencies]
